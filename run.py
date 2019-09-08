@@ -40,49 +40,57 @@ def main():
     print("WELCOME TO OUR PASSWORD LOCKER APP")
     print("***********************************")
     print("\n")
-
-    while True:
+    
+    
         # print("Do you have have an account ? (y/n)")
         # choice=input()
         # if choice =="n":
-           print("CREATE ACCOUNT")
-           print("**************")
-           print("\n")
-           print("Please Enter your username: ")
-           cUserName=input() 
-           print("Please enter your password")
-           cPassword=input()
-           save_users(create_users(cUserName,cPassword))
-           
-           print("\n")
-           print(f"User {cUserName} created successfully !!")
-           print("\n")
-           
-           print("ENTER YOUR LOGIN CREDENTIALS")
-           print("****************************")
-           print("Enter username: ")
-           lUserName=input()
-           print("Enter Password: ")
-           lPassword=input()
-           
+    print("CREATE ACCOUNT")
+    print("**************")
+    print("\n")
+    print("Please Enter your username: ")
+    cUserName=input() 
+    print("Please enter your password")
+    cPassword=input()
+    save_users(create_users(cUserName,cPassword))
+    
+    print("\n")
+    print(f"User {cUserName} created successfully !!")
+    print("\n")
+    
+    print("ENTER YOUR LOGIN CREDENTIALS")
+    print("****************************")
+    print("Enter username: ")
+    lUserName=input()
+    print("Enter Password: ")
+    lPassword=input()
+
+    while True:
            if cUserName==lUserName :
-              print("Please Enter :: a:Create a new credential, b:display credentials, c:find a credential, d -exit ")
-              number=input()
-              if number == 'a':
+              print("Please Enter :: a:Create a new credential, b:Display credentials, c:Find a credential, d:Delete a credential, e -exit ")
+              choice=input()
+              if choice == 'a':
                  print("NEW CREDENTIAL")
+                 print("--------------")
                  print("Account Name :")
                  accountName=input()
                  print("Account username: ")
                  username=input()
-                 print("Account Password: ")
-                 password=input()
+                 print("Please Enter :: g: For the app to generate password for you, o:To put your own password")
+                 choiceP=input()
+                 if choiceP == 'g' :
+                    s="*@3"
+                    password=username.join(s)
+                 else:
+                     print("Enter your password: ")
+                     password=input()
 
                  save_credentials(create_crededentials(accountName,username,password))
                  print("\n")
                  print(f"****Credential {accountName} is created****")
                  print("\n")
 
-              elif number == 'b':
+              elif choice == 'b':
                  if display_credentials():
                     print("Here is all your credentials")
                     print("\n")
@@ -97,7 +105,7 @@ def main():
                       print("You dont seem to have any credentials saved yet")
                       print('\n')
 
-              elif number == 'c' :
+              elif choice == 'c' :
                     print("Enter the account name you want to search for :")
                     search_name=input()
                     if  find_credentials(search_name):
@@ -108,21 +116,16 @@ def main():
 
                     else:
                         print("That credential does not exist")
-
-              elif number == 'd' :
+              elif choice == 'd' :
+                    print("Enter the account name you want to search for :")
+              elif choice == 'e' :
                     print(f"Thank you {cUserName} for using our app, Bye...")
                     break
               else:
                     print("I really didn't get that. Please use the letters")
            else:
                 print("Invalid login credentials...")
-        
-        
-
-
-
-
-
+    
 if __name__ == '__main__':
 
     main()
