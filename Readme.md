@@ -18,7 +18,7 @@
 
 | Name          | Description                         |
 |---------------|-------------------------------------|
-| Terminal      | to test and the application         |
+| Terminal      | to test and ru the application      |
 | Visual studio | to build the application            |
 
 This project is licensed under the terms of Emerance Niyomufasha
