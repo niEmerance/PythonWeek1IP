@@ -18,7 +18,7 @@
 
 | Name          | Description                         |
 |---------------|-------------------------------------|
-| Terminal      | to test and the application             |
-| Visual studio | to build my pages                   |
+| Terminal      | to test and the application         |
+| Visual studio | to build the application            |
 
 This project is licensed under the terms of Emerance Niyomufasha
