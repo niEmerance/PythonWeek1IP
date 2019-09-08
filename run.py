@@ -117,7 +117,16 @@ def main():
                     else:
                         print("That credential does not exist")
               elif choice == 'd' :
-                    print("Enter the account name you want to delete :")
+                    print("Enter the account name of the credential you want to delete:")
+                    deleteAccount=input()
+                    if find_credentials(deleteAccount) :
+                        deleteAcc=find_credentials(deleteAccount)
+                        for credential in display_credentials():
+                            deleteAcc.delete_credential()
+                            print("Account Deleted successfully !!")
+                    else:
+                        print("Credential not found !!")
+
               elif choice == 'e' :
                     print(f"Thank you {cUserName} for using our app, Bye...")
                     break

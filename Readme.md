@@ -7,11 +7,12 @@
 
 ## project setup instructions
 
- - First there is a welcome page
+ - First there is a welcome note
  - Then create account
  - Therefore you login
  - Then you can add a credential
  - Display credentials
+ - Search and Delete credential
 
 ## Applications Used
 
