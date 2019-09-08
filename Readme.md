@@ -1,6 +1,6 @@
 # Password Locker
 
- we will create an amazing application that will help us manage our passwords 
+ This is an amazing application that will help us manage our passwords 
  and even generate new passwords for us.
 
 ## Created by Emerance Niyomufasha
