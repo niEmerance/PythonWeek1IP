@@ -117,7 +117,7 @@ def main():
                     else:
                         print("That credential does not exist")
               elif choice == 'd' :
-                    print("Enter the account name you want to search for :")
+                    print("Enter the account name you want to delete :")
               elif choice == 'e' :
                     print(f"Thank you {cUserName} for using our app, Bye...")
                     break
