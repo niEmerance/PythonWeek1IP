@@ -18,8 +18,7 @@
 
 | Name          | Description                         |
 |---------------|-------------------------------------|
-| Terminal      | to test the application             |
-| Google chrome | to check my work                    |
+| Terminal      | to test and the application             |
 | Visual studio | to build my pages                   |
 
 This project is licensed under the terms of Emerance Niyomufasha
